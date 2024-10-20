@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creperia</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos__menu.css">
+
+    <meta name="theme-color" content="#000000">
+
+</head>
+
+<body>
+    <section class="section__header">
+        <header>
+            <div class="nav__logo"><img src="./images/logo__trasparente.svg" alt="Creperia Tepotzotlán"
+                    class="nav__logo"></div>
+            <div class="nav__bars">
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+                <div class="nav__line"></div>
+            </div>
+
+            <nav class="nav__bar">
+                <ul>
+                    <li>
+                        <a href="./index.html" class="nav__icons">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="./menu.html" class="nav__icons">MENÚ</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html" class="nav__icons">UBICACIÓN</a>
+                    </li>
+                    <li class="nav__bar--redes">
+                        <a href="https://www.facebook.com/Lacreperiatepotzotlan" class="nav__icons--redes"
+                            target="_blank">
+                            <svg class="nav__img nav__img--facebook" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="white">
+                                <path
+                                    d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5510167769" class="nav__icons--redes" target="_blank">
+                            <svg class="nav__img nav__img--whatsapp" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve"
+                                width="512" height="512" fill="white">
+                                <g id="WA_Logo">
+                                    <g>
+                                        <path style="fill-rule:evenodd;clip-rule:evenodd;"
+                                            d="M20.463,3.488C18.217,1.24,15.231,0.001,12.05,0    C5.495,0,0.16,5.334,0.157,11.892c-0.001,2.096,0.547,4.142,1.588,5.946L0.057,24l6.304-1.654    c1.737,0.948,3.693,1.447,5.683,1.448h0.005c6.554,0,11.89-5.335,11.893-11.893C23.944,8.724,22.708,5.735,20.463,3.488z     M12.05,21.785h-0.004c-1.774,0-3.513-0.477-5.031-1.378l-0.361-0.214l-3.741,0.981l0.999-3.648l-0.235-0.374    c-0.99-1.574-1.512-3.393-1.511-5.26c0.002-5.45,4.437-9.884,9.889-9.884c2.64,0,5.122,1.03,6.988,2.898    c1.866,1.869,2.893,4.352,2.892,6.993C21.932,17.351,17.498,21.785,12.05,21.785z M17.472,14.382    c-0.297-0.149-1.758-0.868-2.031-0.967c-0.272-0.099-0.47-0.149-0.669,0.148s-0.767,0.967-0.941,1.166    c-0.173,0.198-0.347,0.223-0.644,0.074c-0.297-0.149-1.255-0.462-2.39-1.475c-0.883-0.788-1.48-1.761-1.653-2.059    s-0.018-0.458,0.13-0.606c0.134-0.133,0.297-0.347,0.446-0.521C9.87,9.97,9.919,9.846,10.019,9.647    c0.099-0.198,0.05-0.372-0.025-0.521C9.919,8.978,9.325,7.515,9.078,6.92c-0.241-0.58-0.486-0.501-0.669-0.51    C8.236,6.401,8.038,6.4,7.839,6.4c-0.198,0-0.52,0.074-0.792,0.372c-0.272,0.298-1.04,1.017-1.04,2.479    c0,1.463,1.065,2.876,1.213,3.074c0.148,0.198,2.095,3.2,5.076,4.487c0.709,0.306,1.263,0.489,1.694,0.626    c0.712,0.226,1.36,0.194,1.872,0.118c0.571-0.085,1.758-0.719,2.006-1.413c0.248-0.694,0.248-1.29,0.173-1.413    C17.967,14.605,17.769,14.531,17.472,14.382z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <section class="container__menu">
+        <p class="menu__toppings--foot">BUBBLE WAFFLE</p>
+            <div class="container__menu--box">
+                
+                <div class="menu__pasos">
+                    <h2 class="menu__pasos--title">PASOS</h2>
+                    <p class="menu__pasos--subtitle"></p>
+                    <div class="menu__pasos--box">
+                        <p class="menu__pasos--text">1. Elige el color de tu waffle (Natural/Chocolate)</p>
+                        <p class="menu__pasos--text">2. Elige un topping liquido</p>
+                        <p class="menu__pasos--text">3. Elige el relleno</p>
+                        <p class="menu__pasos--text">4. Elige: galleta/dulce</p>
+                        <p class="menu__pasos--text">5. Elige una fruta</p>
+                        <p class="menu__pasos--text">6. Elige un segundo topping</p>
+                        <p class="menu__pasos--text">7. Elige tu espolvoreado final</p>
+                    </div>
+                </div>
+                <div class="menu__toppings">
+                    <h2 class="menu__toppings--title">TOPPINGS</h2>
+                    <div class="menu__toppings--box ">
+                        <div class="menu__toppings--col1">
+
+                            <p class="menu__toppings--subtitle">Liquidos</p>
+                            <p class="menu__toppings--text">
+                                -Hershey´s de chocolate<br>
+                                -Hershey´s de fresa<br>
+                                -Lechera<br>
+                                -Cajeta<br>
+                                -Nutella<br>
+                            </p>
+
+                            <p class="menu__toppings--subtitle">Relleno</p>
+                            <p class="menu__toppings--text">
+                                -Helado de vainilla<br>
+                                -Helado de fresa<br>
+                                -Helado de chocolate<br>
+                                -Helado de oreo<br>
+                                -Helado de chocomenta<br>
+                                -Helado Hershey´s<br>
+                                -Helado de gansito<br>
+                                -Helado de zarzamora con queso<br>
+                            </p>
+
+                            <p class="menu__toppings--subtitle">Galletas</p>
+                            <p class="menu__toppings--text">
+                                -Oreo<br>
+                                -Cremax de nieve<br>
+                                -Gansito<br>
+                                -Chocorrol<br>
+                                -Pinguino<br>
+                            </p>
+
+                        </div>
+                        <div class="menu__toppings--col2">
+
+                            <p class="menu__toppings--subtitle">Dulce</p>
+                            <p class="menu__toppings--text">
+                                -Bombones<br>
+                                -Lunetas<br>
+                                -Kranky<br>
+                                -Carlos V<br>
+                                -Chocoretas<br>
+                                -Chocolate KitKat<br>
+                                -Kinder bueno<br>
+                                -Kinder chocolate<br>
+                                -Chocolate Crunch<br>
+                            </p>
+
+                            <p class="menu__toppings--subtitle">Fruta</p>
+                            <p class="menu__toppings--text">
+                                -Plátano<br>
+                                -Fresa<br>
+                                -Kiwi<br>
+                                -Durazno<br>
+                            </p>
+
+                            <p class="menu__toppings--subtitle">Espolvoreado</p>
+                            <p class="menu__toppings--text">
+                                -Chispas de chocolate<br>
+                                -Chispas de colores<br>
+                                -Azúcar glass<br>
+                                -Coco tostado<br>
+                                -Canela<br>
+                                -Frutos secos<br>
+                                -Arándano<br>
+                            </p>
+
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <div class="menu__cdulces">
+                <h2 class="menu__cdulces--title">CREPAS DULCES</h2>
+                <div class="menu__cdulces--box ">
+                    <p class="menu__cdulces--subtitle"></p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">1 ingrediente (nutella, lechera, cajeta, Hershey´s, mermelada)</span>
+                        <span>$50</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Philadelphia/nutella</span>
+                        <span>$55</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Zarzamora/philadelphia</span>
+                        <span>$55</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Oreo/nutella</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Oreo/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Nutella/nuez</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Lechera/nuez</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Cajeta/nuez</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Platano/nutella</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Platano/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Fresa/nutella</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Fresa/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Durazno/nutella</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Durazno/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Durazno/philadelphia y rompope</span>
+                        <span>$80</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Chongos zamoranos/rompope</span>
+                        <span>$85</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Manzana/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Mango/philadelphia y lechera</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Frutas/nutella</span>
+                        <span>$75</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Frutas/philadelphia y lechera</span>
+                        <span>$75</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Durazno, fresa, kiwi, Hershey´s, crema batida y una bola de helado</span>
+                        <span>$85</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Fresa, nutella, blueberry, ferrero y nuez</span>
+                        <span>$120</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Philadelphia, durazno y mazapán</span>
+                        <span>$75</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Philadelphia, frea, durazno y kinder bueno</span>
+                        <span>$120</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Nutella, fresa, plátano y kinder chocolate</span>
+                        <span>$110</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Nutella, fresa, plátano y oreo</span>
+                        <span>$110</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Fresas con crema</span>
+                        <span>$80</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Philadelphia, fresa, durazno, plátano, conejo turin y paleta de conejo
+                            turin</span>
+                        <span>$145</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Frutos rojos philadelphia y lechera o nutella</span>
+                        <span>$80</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Nutella, fresa, durazno y KitKat</span>
+                        <span>$90</span>
+                    </p>
+                    <p class="menu__cdulces--text">
+                        <span class="name">Ingrediente extra</span>
+                        <span>$10</span>
+                    </p>
+                </div>
+            </div>
+            <div class="menu__csaladas">
+                <h2 class="menu__csaladas--title">CREPAS SALADAS</h2>
+                <div class="menu__csaladas--box ">
+                    <p class="menu__csaladas--subtitle"></p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Jamón/philadelphia</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Jamón/mozzarella</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Hawaiana</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Champiñones/mozzarella</span>
+                        <span>$70</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Crepizza</span>
+                        <span>$80</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Peperoni/mozzarella</span>
+                        <span>$70</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Yucateca (Nutella/queso bola)</span>
+                        <span>$70</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Philadelphia/mozzarella/jamón</span>
+                        <span>$70</span>
+                    </p>
+                    <p class="menu__csaladas--text">
+                        <span class="name">Philadelphia/mozzarella</span>
+                        <span>$60</span>
+                    </p>
+                </div>
+            </div>
+            <div class="menu__marquesitas">
+                <h2 class="menu__marquesitas--title">MARQUESITAS</h2>
+                <div class="menu__marquesitas--box ">
+                    <p class="menu__marquesitas--subtitle"></p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Tradicional (Nutella/queso bola)</span>
+                        <span>$50</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Tío Chava (Plátano/fresa/nutella/queso bola)</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Canalla (Mermelada de frambuesa/queso bola)</span>
+                        <span>$55</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Peperoni/queso bola</span>
+                        <span>$55</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Hawaiana</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Pechuga de pavo/queso bola</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Doña Tere (Queso bola)</span>
+                        <span>$45</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Cajeta/nuez/queso bola</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Nutella/fresas/bombones</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Ate/queso bola</span>
+                        <span>$60</span>
+                    </p>
+                    <p class="menu__marquesitas--text">
+                        <span class="name">Mazapán/nutella/queso bola</span>
+                        <span>$60</span>
+                    </p>
+                </div>
+            </div>
+            <div class="menu__waffles">
+                <h2 class="menu__waffles--title">WAFFLES</h2>
+                <div class="menu__waffles--box">
+                    <p class="menu__waffles--subtitle"></p>
+                    <p class="menu__waffles--text">
+                        <span class="name">Frutas/nutella</span>
+                        <span>$75</span>
+                    </p>
+                    <p class="menu__waffles--text">
+                        <span class="name">Frutas/philadelphia y lechera</span>
+                        <span>$75</span>
+                    </p>
+                    <p class="menu__waffles--text">
+                        <span class="name">Frutas en almibar/nutella</span>
+                        <span>$65</span>
+                    </p>
+                    <p class="menu__waffles--text">
+                        <span class="name">Frutas en almibar/philadelphia/lechera</span>
+                        <span>$80</span>
+                    </p>
+                    <p class="menu__waffles--text">
+                        <span class="name">Ingrediente extra</span>
+                        <span>$10</span>
+                    </p>
+                </div>
+            </div>
+            <div class="menu__platillos">
+                <h2 class="menu__platillos--title">PLATILLOS ESPECIALES</h2>
+                <p class="menu__platillos--subtitle"></p>
+                <p class="menu__platillos--text">
+                    <span class="name">Pechuga asada (Acompañada de papas y ensalada)</span>
+                    <span>$110</span>
+                </p>
+                <p class="menu__platillos--text">
+                    <span class="name">Carne asada (Acompañada de papas y ensalada)</span>
+                    <span>$110</span>
+                </p>
+                <p class="menu__platillos--text">
+                    <span class="name">Arrachera (Acompañada de papas y ensalada)</span>
+                    <span>$130</span>
+                </p>
+                <p class="menu__platillos--text">
+                    <span class="name">Milanesa de res (Acompañada de papas y ensalada)</span>
+                    <span>$110</span>
+                </p>
+                <p class="menu__platillos--text">
+                    <span class="name">Milanesa de pollo (Acompañada de papas y ensalada)</span>
+                    <span>$110</span>
+                </p>
+                <p class="menu__platillos--text">
+                    <span class="name">Tacos dorados</span>
+                    <span>$75</span>
+                </p>
+            </div>
+            <div class="menu__alitas">
+                <h2 class="menu__alitas--title">ALITAS</h2>
+                <p class="menu__alitas--subtitle"></p>
+                <p class="menu__alitas--text">
+                    <span class="name">BBQ, Búfalo, Original, Mango, Habanero, Tamarindo, Maracuya, Piña, Blue Berry, Frutos rojos</span>
+                </p>
+                <p class="menu__alitas--text">
+                    <span class="name">Orden de alitas</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__alitas--text">
+                    <span class="name">Orden de alitas/papas</span>
+                    <span>$100</span>
+                </p>
+                <p class="menu__alitas--text">
+                    <span class="name">Orden de boneless</span>
+                    <span>$90</span>
+                </p>
+                <p class="menu__alitas--text">
+                    <span class="name">Orden de boneless/papas</span>
+                    <span>$110</span>
+                </p>
+                <p class="menu__alitas--text">
+                    <span class="name">Orden de papas a la francesa</span>
+                    <span>$40</span>
+                </p>
+            </div>
+            <div class="menu__hamburguesas">
+                <h2 class="menu__hamburguesas--title">HAMBURGUESAS</h2>
+                <p class="menu__hamburguesas--subtitle"></p>
+                <p class="menu__hamburguesas--text">
+                    <span class="name">Hamburguesa sencilla</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__hamburguesas--text">
+                    <span class="name">Hamburguesa hawaiana</span>
+                    <span>$70</span>
+                </p>
+                <p class="menu__hamburguesas--text">
+                    <span class="name">Hamburguesa sencilla con papas</span>
+                    <span>$85</span>
+                </p>
+                <p class="menu__hamburguesas--text">
+                    <span class="name">Hamburguesa hawaiana con papas</span>
+                    <span>$90</span>
+                </p>
+            </div>
+            <div class="menu__chapatas">
+                <h2 class="menu__chapatas--title">BAGUETTES Y CHAPATAS</h2>
+                <p class="menu__chapatas--subtitle"></p>
+                <p class="menu__chapatas--text">
+                    <span class="name">Pechuga de pavo</span>
+                    <span>$85</span>
+                </p>
+                <p class="menu__chapatas--text">
+                    <span class="name">Pechuga de adobo</span>
+                    <span>$85</span>
+                </p>
+                <p class="menu__chapatas--text">
+                    <span class="name">Milanesa de pollo</span>
+                    <span>$85</span>
+                </p>
+                <p class="menu__chapatas--text">
+                    <span class="name">Milanesa de res</span>
+                    <span>$85</span>
+                </p>
+                <p class="menu__chapatas--text">
+                    <span class="name">Arrachera</span>
+                    <span>$120</span>
+                </p>
+            </div>
+            <div class="menu__ensaladas">
+                <h2 class="menu__ensaladas--title">ENSALADAS</h2>
+                <p class="menu__ensaladas--subtitle"></p>
+                <p class="menu__ensaladas--text">
+                    <span class="name">Ensalada de frutas</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__ensaladas--text">
+                    <span class="name">Ensalada de frutas con pollo</span>
+                    <span>$100</span>
+                </p>
+                <p class="menu__ensaladas--text">
+                    <span class="name">Ensalada de peras al vino tinto</span>
+                    <span>$100</span>
+                </p>
+            </div>
+            <div class="menu__enchiladas">
+                <h2 class="menu__enchiladas--title">ENCHILADAS</h2>
+                <p class="menu__enchiladas--subtitle"></p>
+                <p class="menu__enchiladas--text">
+                    <span class="name">Sencillas</span>
+                    <span>$70</span>
+                </p>
+                <p class="menu__enchiladas--text">
+                    <span class="name">Gratinadas</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__enchiladas--text">
+                    <span class="name">Gratinadas con carne asada</span>
+                    <span>$100</span>
+                </p>
+                <p class="menu__enchiladas--text">
+                    <span class="name">Gratinadas con arrachera</span>
+                    <span>$120</span>
+                </p>
+                <p class="menu__enchiladas--text">
+                    <span class="name">Gratinadas con pastor</span>
+                    <span>$115</span>
+                </p>
+            </div>
+            <div class="menu__enmoladas">
+                <h2 class="menu__enmoladas--title">ENMOLADAS</h2>
+                <p class="menu__enmoladas--subtitle"></p>
+                <p class="menu__enmoladas--text">
+                    <span class="name">Sencillas</span>
+                    <span>$70</span>
+                </p>
+                <p class="menu__enmoladas--text">
+                    <span class="name">Gratinadas</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__enmoladas--text">
+                    <span class="name">Gratinadas con carne asada</span>
+                    <span>$100</span>
+                </p>
+                <p class="menu__enmoladas--text">
+                    <span class="name">Gratinadas con arrachera</span>
+                    <span>$120</span>
+                </p>
+                <p class="menu__enmoladas--text">
+                    <span class="name">Gratinadas con pastor</span>
+                    <span>$115</span>
+                </p>
+            </div>
+            <div class="menu__frappees">
+                <h2 class="menu__frappees--title">FRAPPE</h2>
+                <p class="menu__frappees--subtitle"></p>
+                <p class="menu__frappees--text">
+                    <span class="name">Kinder delice</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Matcha</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Oreo</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chai</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chai tigre</span>
+                    <span>$75</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Gansito</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Flan</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Mazapán</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Taro</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chocorrol</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Piña colada</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chocolate caramelizado</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Horchata</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Fresas con crema</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Red velvet</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Yogurt griego con frutos rojos</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Dulce de calabaza</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chocolate semi-amargo</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Cajeta</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Choco-arándano</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Chocolate blanco</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Caramel macchiato</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Pan de muerto</span>
+                    <span>$80</span>
+                </p>
+                <p class="menu__frappees--text">
+                    <span class="name">Conejo turin</span>
+                    <span>$80</span>
+                </p>
+            </div>
+            <div class="menu__sodas">
+                <h2 class="menu__sodas--title">SODAS ITALIANAS</h2>
+                <p class="menu__sodas--subtitle"></p>
+                <p class="menu__sodas--text">
+                    <span class="name">Frutos rojos</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Blue Berry</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Kiwi</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Té helado de frambuesa</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Mora azul</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Mojito</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Blue curacao</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Neon</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Glitter</span>
+                    <span>$65</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Cereza</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Piña</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Sandía</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Litchi</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Pétalos de rosa</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__sodas--text">
+                    <span class="name">Arándano</span>
+                    <span>$60</span>
+                </p>
+            </div>
+            <div class="menu__smo">
+                <h2 class="menu__smo--title">SMOOTHIES</h2>
+                <p class="menu__smo--subtitle"></p>
+                <p class="menu__smo--text">
+                    <span class="name">Fresa</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__smo--text">
+                    <span class="name">Mango</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__smo--text">
+                    <span class="name">Maracuya</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__smo--text">
+                    <span class="name">Kiwi</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__smo--text">
+                    <span class="name">Tamarindo</span>
+                    <span>$60</span>
+                </p>
+            </div>
+            <div class="menu__tizanas">
+                <h2 class="menu__tizanas--title">TIZANAS</h2>
+                <p class="menu__tizanas--subtitle"></p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Fresa-mango</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Fresa-kiwi</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Moras</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Maracuya</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Ponche-guayaba</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__tizanas--text">
+                    <span class="name">Cereza madura</span>
+                    <span>$60</span>
+                </p>
+            </div>
+            <div class="menu__malteadas">
+                <h2 class="menu__malteadas--title">MALTEADAS</h2>
+                <p class="menu__malteadas--subtitle"></p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Fresa</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Vainilla</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Chocolate</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Oreo</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Coco</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Chocomenta</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Gansito</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Queso con zarzamora</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__malteadas--text">
+                    <span class="name">Conejo turin</span>
+                    <span>$60</span>
+                </p>
+            </div>
+            <div class="menu__cafe">
+                <h2 class="menu__cafe--title">CAFÉ</h2>
+                <p class="menu__cafe--subtitle"></p>
+                <p class="menu__cafe--text">
+                    <span class="name">Latte</span>
+                    <span>$50</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Latte frío</span>
+                    <span>$50</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino</span>
+                    <span>$45</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino crema irlandesa</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino amaretto</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino tiramisú</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino chocolate</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino avellana tostada</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Cappuccino vainilla</span>
+                    <span>$55</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Americano</span>
+                    <span>$35</span>
+                </p>
+                <p class="menu__cafe--text">
+                    <span class="name">Espresso</span>
+                    <span>$25</span>
+                </p>
+            </div>
+            <div class="menu__otros">
+                <h2 class="menu__otros--title">OTROS</h2>
+                <p class="menu__otros--subtitle"></p>
+                <p class="menu__otros--text">
+                    <span class="name">Mangonada</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__otros--text">
+                    <span class="name">Fresada</span>
+                    <span>$60</span>
+                </p>
+                <p class="menu__otros--text">
+                    <span class="name">Refrescos</span>
+                    <span>$30</span>
+                </p>
+                <p class="menu__otros--text">
+                    <span class="name">Chocolate caliente</span>
+                    <span>$65</span>
+                </p>
+            </div>
+    </section>
+</body>
+<script src="./js/menu.js"></script>
+<script src="./js/animacion.js"></script>
+
+</html>

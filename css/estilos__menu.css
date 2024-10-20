@@ -1,0 +1,953 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif, Arial;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section__header {
+    width: 100%;
+    height: 80px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+.nav--color {
+    background-color: black;
+}
+
+.nav--colorscroll {
+    background-color: black;
+}
+
+.nav__logo {
+    height: 90px;
+}
+
+.nav__bars {
+    display: none;
+    cursor: pointer;
+}
+
+.nav__bar ul {
+    display: flex;
+    background-color: #000000A3;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+/*
+.nav__bar ul li a {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0 5px;
+    border: solid 1px;
+    border-color: #00000000;
+}*/
+.nav__icons {
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0 5px;
+    border: solid 1px;
+    border-color: #00000000;
+}
+
+.nav__icons:hover {
+    color: white;
+    border: solid 1px;
+    border-color: black;
+    background-color: black;
+
+}
+
+.nav__bar--redes {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.nav__icons--redes {
+    width: 20px;
+    padding: 0;
+    margin: 0 10px;
+    transition: 0.2s;
+    border: solid 1px;
+    border-color: #00000000;
+}
+
+.nav__img {
+    width: 20px;
+    height: 20px;
+}
+
+.nav__img--facebook:hover {
+    fill: #0866ff;
+}
+
+.nav__img--whatsapp:hover {
+    fill: #25D366;
+}
+
+.container__menu {
+    width: 100%;
+    padding: 5% 10%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container__menu--title {
+    color: black;
+    letter-spacing: 1rem;
+    font-size: 56px;
+}
+
+.container__menu--box {
+    display: flex;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__pasos {
+    margin: 5% 0 5% 0;
+    width: 30%;
+}
+
+.menu__pasos--box {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu__pasos--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__pasos--text {
+    text-align: initial;
+    line-height: 25px;
+}
+
+.menu__toppings {
+    margin: 5% 0 10% 0;
+    width: 70%;
+
+}
+
+.menu__toppings--box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.menu__toppings--col1 {
+    margin: 10px 0 0 0;
+}
+
+.menu__toppings--col2 {
+    margin: 10px 0 0 0;
+}
+
+
+.menu__toppings--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__toppings--subtitle {
+    font-family: "Pacifico", cursive;
+    text-align: initial;
+    margin: 10px 0 5px 0;
+}
+
+.menu__toppings--text {
+    text-align: initial;
+    margin: 5px 0 10px 0px;
+}
+
+.menu__toppings--foot {
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
+    margin: 0px auto;
+    background: #BE9063;
+    padding: 15px;
+    max-width: 250px;
+    letter-spacing: 0.1rem;
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    top: 15px;
+}
+
+.menu__cdulces {
+    margin: 10% auto 20px auto;
+    background-color: #BE9063;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+}
+
+.menu__cdulces--box {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+}
+
+.menu__cdulces--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.menu__cdulces--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.menu__csaladas {
+    margin: 20px auto 20px auto;
+    background-color: #BE9063;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+}
+
+.menu__csaladas--box {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+}
+.menu__csaladas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.menu__csaladas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.menu__marquesitas {
+    margin: 20px auto 20px auto;
+    background-color: #BE9063;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+}
+
+.menu__marquesitas--box {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+}
+.menu__marquesitas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.menu__marquesitas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.menu__waffles {
+    margin: 20px auto 10% auto;
+    background-color: #BE9063;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.5);
+}
+
+.menu__waffles--box {
+    height: 0;
+    width: 0;
+    transition: 0.5s;
+    opacity: 0;
+    display: none;
+}
+.menu__waffles--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #ffffff;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.menu__waffles--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.menu__platillos {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__platillos--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__platillos--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+    
+}
+
+.menu__platillos--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__alitas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__alitas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__alitas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__alitas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__hamburguesas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__hamburguesas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__hamburguesas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.menu__hamburguesas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__chapatas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__chapatas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__chapatas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__chapatas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__ensaladas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__ensaladas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__ensaladas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__ensaladas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__enchiladas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__enchiladas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__enchiladas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__enchiladas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__enmoladas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__enmoladas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__enmoladas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__enmoladas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.menu__frappees {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__frappees--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__frappees--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__frappees--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.menu__sodas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__sodas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__sodas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__sodas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.menu__smo {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__smo--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__smo--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__smo--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+    
+}
+
+
+.menu__tizanas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__tizanas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__tizanas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__tizanas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+
+
+.menu__malteadas {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__malteadas--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__malteadas--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__malteadas--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+    
+}
+
+
+
+.menu__cafe {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__cafe--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__cafe--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__cafe--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+    
+}
+
+
+.menu__otros {
+    margin: 10% 0;
+    background-color: #0000000f;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.menu__otros--box {
+    height: 0;
+    transition: 0.5s;
+    opacity: 0;
+}
+.menu__otros--title {
+    font-family: "Pacifico", cursive;
+    letter-spacing: 1rem;
+    color: #BE9063;
+    margin: 10px 0px;
+}
+
+.menu__otros--text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: initial;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.2);
+    
+}
+
+
+
+
+.name {
+    margin: 0 5% 0 0;
+}
+
+.menu__c--active {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: initial;
+}
+@media(max-width:900px) {
+
+    .section__header--title {
+        letter-spacing: 2px;
+        margin: 5px 0;
+        font-size: 32px;
+    }
+
+    .section__header--subtitle {
+        letter-spacing: 1rem;
+        font-size: 50px;
+    }
+
+    header {
+        padding: 0 5%;
+        height: 80px;
+    }
+
+    .nav__logo {
+        height: 70px;
+    }
+
+    .nav__bars {
+        display: block;
+        padding: 10px;
+        border-radius: 100%;
+        background-color: black;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+    }
+
+    .nav__bars .nav__line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    .nav__bar {
+        height: 0;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(25, 25, 25);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+
+    .nav__bar.active {
+        height: calc(100% - 80px);
+    }
+
+    .nav__bar ul {
+        background-color: #000000;
+        display: flex;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        border-radius: 0;
+        padding-bottom: 80px;
+    }
+
+    .nav__bar.active ul {
+        opacity: 1;
+    }
+
+
+    .nav__img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container__menu {
+        font-size: 16px;
+        padding: 5% 5%;
+    }
+
+    .container__menu--title {
+        color: black;
+        letter-spacing: 1rem;
+    }
+
+    .menu__pasos {
+        width: 100%;
+    }
+
+    .menu__toppings {
+        width: 100%;
+    }
+
+    .container__menu--box {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu__toppings--col1 {
+        width: 45%;
+    }
+    .menu__toppings--col2 {
+        width: 45%;
+    }
+
+    .menu__marquesitas--title{
+        font-size: 20px;
+        letter-spacing: 0.5rem;
+    }
+    .menu__hamburguesas--title {
+        font-size: 20px;
+        letter-spacing: 0.5rem;
+    }
+}
